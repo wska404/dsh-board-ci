@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "wifi_prov.c"
+        "pairing.c"
+        "http_api.c"
+        "ws_audio.c"
+        "audio_i2s.c"
+        "codec_init.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        esp_wifi
+        esp_netif
+        esp_http_server
+        mdns
+        nvs_flash
+        json
+        mbedtls
+        driver
+        esp_timer
+)
